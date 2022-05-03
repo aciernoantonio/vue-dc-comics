@@ -9,7 +9,7 @@
       <div class="d-flex center navbar">
 
         <div>
-          <img src="./assets/dc-logo.png" alt="">
+          <img src="@/assets/dc-logo.png" alt="">
         </div>
         <div class="navLink">
 
@@ -74,8 +74,8 @@ export default {
   }
 
   .active{
-    color: $primay-color;
-    border-bottom: 7px solid $primary-color;
+    color: #0282F9;
+    border-bottom: 7px solid #0282F9;
     padding-bottom: 2rem
   }
 
