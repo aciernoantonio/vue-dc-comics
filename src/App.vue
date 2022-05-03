@@ -5,15 +5,7 @@
 
   <SiteMain/> 
 
-  <footer>
-  
-    <div class="footerLinks">
-
-      
-
-    </div>
-
-  </footer>   
+  <SiteFooter/>   
 
   </div>
 </template>
@@ -22,13 +14,15 @@
 
 import SiteHeader from "@/components/headerComponent.vue"
 import SiteMain from "@/components/mainComponent.vue"
+import SiteFooter from "@/components/footerComponent.vue"
 
 
 export default {
   name: 'headerComponent',
   components: {
     SiteHeader,
-    SiteMain
+    SiteMain,
+    SiteFooter
   }
 }
 </script>
@@ -43,6 +37,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
 
 </style>
