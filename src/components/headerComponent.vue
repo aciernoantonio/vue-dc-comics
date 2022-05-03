@@ -74,8 +74,8 @@ export default {
   }
 
   .active{
-    color: #0282F9;
-    border-bottom: 7px solid #0282F9;
+    color: $primary-color;
+    border-bottom: 7px solid $primary-color;
     padding-bottom: 2.7rem
   }
 

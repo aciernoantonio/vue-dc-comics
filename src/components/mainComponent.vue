@@ -57,7 +57,7 @@ main{
     color: white;
 
     #contentHere{
-        background-color: #1C1C1C;
+        background-color: $dark-color;
     }
 
     h2{
@@ -65,7 +65,7 @@ main{
     }
 
     #mainLinks{
-        background-color: #0282F9;
+        background-color: $primary-color;
         
         .container{
             justify-content: center;
