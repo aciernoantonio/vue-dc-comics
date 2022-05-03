@@ -22,22 +22,22 @@
 
                 <div id="merch" class="d-flex center">
                     <img src="@/assets/buy-comics-merchandise.png" alt="">
-                    <div>DIGITAL COMICS</div>
-                </div>
-
-                <div id="shop" class="d-flex center">
-                    <img src="@/assets/buy-comics-shop-locator.png" alt="">
-                    <div>DIGITAL COMICS</div>
+                    <div>DC MERCHANDISE</div>
                 </div>
 
                 <div id="subscriptions" class="d-flex center">
                     <img src="@/assets/buy-comics-subscriptions.png" alt="">
-                    <div>DIGITAL COMICS</div>
+                    <div>SUBSCRIPTION</div>
+                </div>
+
+                <div id="shop" class="d-flex center">
+                    <img src="@/assets/buy-comics-shop-locator.png" alt="">
+                    <div>COMIC SHOP LOCATOR</div>
                 </div>
 
                 <div id="visa" class="d-flex center">
                     <img src="@/assets/buy-dc-power-visa.svg" alt="">
-                    <div>DIGITAL COMICS</div>
+                    <div>DC POWER VISA</div>
                 </div>
 
             </div>
@@ -69,6 +69,7 @@ main{
         
         .container{
             justify-content: center;
+            padding: 1.5rem 0;
 
             div{
                 margin: 0 0.5rem;
@@ -82,7 +83,17 @@ main{
         margin-right: 1rem;
     }
 
-    
+    #comics{
+        img{
+            width: 46px;
+        }
+    }
+
+    #shop{
+        img{
+            width: 35px;
+        }
+    }
 
 }
 
