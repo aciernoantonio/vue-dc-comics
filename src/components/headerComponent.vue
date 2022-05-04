@@ -32,6 +32,9 @@
 
     </nav>
 
+    <div class="jumbotron">
+    </div>
+
   </header>
     
 </template>
@@ -70,7 +73,7 @@ export default {
   }
 
   .navbar{
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .active{
@@ -79,6 +82,12 @@ export default {
     padding-bottom: 2.7rem
   }
 
+}
+
+.jumbotron{
+  background-image: url("@/assets/jumbotron.jpg");
+  background-size: cover;
+  height: 40vh;
 }
 
 </style>

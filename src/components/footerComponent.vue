@@ -116,7 +116,7 @@
   #footerSite{
     flex-direction: column;
     margin-right: 1rem;
-    padding: 1rem 0
+    padding: 1rem 0;
   }
 
   h3{
@@ -158,7 +158,7 @@ footer{
           a{
               margin: 0 0.5rem;
           }
-      }
+        }
   }
 }
 
