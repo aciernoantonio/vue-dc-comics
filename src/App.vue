@@ -23,7 +23,10 @@ export default {
     SiteHeader,
     SiteMain,
     SiteFooter
-  }
+  },
+
+  
+
 }
 </script>
 

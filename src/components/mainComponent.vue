@@ -3,15 +3,13 @@
   
     
         <section id="contentHere">
-            <div class="container">
+            <div class="container comicList d-flex">
 
-                <div class="comicList">
+                <a href="" class="btn-primary current">CURRENT SERIES</a>
 
-                    <div class="comic" v-for="(comic, index) in listComics" :key="index">
-                        <img :src="comic.thumb" alt="">
-                    </div>
+                <Comic v-for="(comic, index) in listComics" :img="comic.thumb" :title="comic.series" :key="index" />
 
-                </div>
+                <a href="#" class="btn-primary">LOAD MORE</a>
 
             </div>
 
@@ -56,18 +54,18 @@
 </template>
 
 <script>
+import Comic from "@/components/comicComponent.vue"
 
 export default {
-
-    props: {
-        img: String,
-        series: String
+    
+    name: "mainComponent",
+    components: {
+        Comic,
     },
 
     data(){
         return {
             listComics : [
-                [
   {
     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
     "price": "$19.99",
@@ -141,10 +139,9 @@ export default {
     "type": "graphic novel"
   }
 ]
-            ]
+            
         }
     }
-
 }
 </script>
 
@@ -158,6 +155,27 @@ main{
 
     #contentHere{
         background-color: $dark-color;
+
+        .comicList{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .current{
+            position: absolute;
+            left: 0;
+            bottom: 96%;
+        }
+
+        .btn-primary{
+            background-color: $primary-color;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 900;
+        }
     }
 
     h2{
@@ -192,12 +210,6 @@ main{
     #shop{
         img{
             width: 35px;
-        }
-    }
-
-    .comic{
-        img{
-            width: 100%;
         }
     }
 
